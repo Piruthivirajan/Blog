@@ -1,0 +1,15 @@
+.btn-signup
+{
+    background-color: tomato;
+    font-size: 17px;
+    color: #1E1C1C;
+    font-weight: 30px;
+}
+.btn-login
+{
+    background-color: tan;
+}
+.controls
+{
+    padding-top: 20px;
+}

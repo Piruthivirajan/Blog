@@ -1,0 +1,24 @@
+<mat-card-title>Login</mat-card-title>
+<div class="controls">
+  <div class="well">
+    <mat-dialog-content>
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="username" value="">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="password" type="password" value="">
+        </mat-form-field>
+      </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="center">
+      <button mat-button class="btn-login">Cancel</button>
+      <button mat-button class="btn-login">Login</button>
+    </mat-dialog-actions>
+  </div>
+</div>
+<mat-dialog-actions align="center">
+  <button mat-button class="btn-signup" (click)="closeLoginDialog()">Sign Up</button>
+</mat-dialog-actions>
