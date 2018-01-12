@@ -39,4 +39,5 @@ export class TopbarComponent implements OnInit {
     let registerRef = this.dialog.open(RegisterComponent, {});
   }
 
+  title = 'HackPro';
 }

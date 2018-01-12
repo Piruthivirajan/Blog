@@ -1,4 +1,4 @@
-<nav class="nav navbar-inverse">
+<!--<nav class="nav navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button class="fa fa-bars pull-left" aria-hidden="true"></button>
@@ -25,4 +25,19 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav>-->
+<mat-toolbar color="info">
+    <button mat-button routerLink="/"> <i class="fa fa-bell fa-1x" aria-hidden="true">home</i>{{title}}</button>
+    <div fxLayout="row" fxShow="true" fxShow.gt-sm>
+        <button mat-button routerLink="/products">Products</button>
+        <button mat-button routerLink="/dashboard">Dashboard</button>
+    </div>
+    <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+     <i class="fa fa-bell fa-1x" aria-hidden="true"></i>
+  </button>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item routerLink="/products">Products</button>
+    <button mat-menu-item routerLink="/dashboard">Dashboard</button>
+    <button mat-menu-item>Help</button>
+</mat-menu>
