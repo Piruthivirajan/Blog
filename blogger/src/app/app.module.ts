@@ -5,6 +5,7 @@ import {DashboardModule} from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     AppComponent,
       ],
   imports: [
-    BrowserModule,BrowserAnimationsModule,MaterialModule,DashboardModule,Angular2FontawesomeModule
+    BrowserModule,BrowserAnimationsModule,MaterialModule,DashboardModule,Angular2FontawesomeModule,FlexLayoutModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
