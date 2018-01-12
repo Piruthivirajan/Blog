@@ -1,7 +1,13 @@
-<mat-sidenav-container class="side-nav">
-  <mat-sidenav-content><button mat-button><i class="fa fa-home fa-1x" aria-hidden="true"></i>Home</button></mat-sidenav-content>
-  <mat-sidenav-content></mat-sidenav-content>
-  <mat-sidenav-content></mat-sidenav-content>
-  <mat-sidenav-content></mat-sidenav-content>
-  <mat-sidenav-content></mat-sidenav-content>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav" [opened]="opened" [mode]="mode">
+  </mat-sidenav>
+
+  <div class="example-sidenav-content">
+    <p>Sidenav content</p>
+
+    <button type="button" mat-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+
 </mat-sidenav-container>

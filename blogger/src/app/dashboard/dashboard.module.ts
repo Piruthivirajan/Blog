@@ -9,9 +9,11 @@ import { SideBarComponent } from './sidebar/sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { HttpModule } from '@angular/http';
+import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
   imports: [
-    CommonModule, MaterialModule, Angular2FontawesomeModule, InputTextModule, ButtonModule, FormsModule
+    CommonModule, MaterialModule, Angular2FontawesomeModule, InputTextModule, ButtonModule, FormsModule, HttpModule, FlexLayoutModule
   ],
   exports: [DashboardComponent],
   declarations: [DashboardComponent, TopbarComponent, SideBarComponent, LoginComponent, RegisterComponent],

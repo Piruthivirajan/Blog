@@ -1,12 +1,15 @@
 <nav class="nav navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="" class="navbar-brand brand-color">Hack Pro</a>
+            <button class="fa fa-bars pull-left" aria-hidden="true"></button>
+            <span><a href="" class="navbar-brand brand-color">Hack Pro</a></span>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li class="search">
-                <input type="text" pInputText placeholder="Keyword">
-                <button pButton type="button" icon="fa-superpowers" class="ui-button-secondary"></button>
+            <li class="search1">
+                <mat-form-field>
+                    <input matInput class="searchbox">
+                    <mat-placeholder class="placeholder">Search <i class="fa fa-search" aria-hidden="true"></i></mat-placeholder>
+                </mat-form-field>
             </li>
             <li class="bell">
                 <a>
